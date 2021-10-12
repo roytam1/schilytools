@@ -1,6 +1,6 @@
 #!/bin/sh
 ###########################################################################
-#ident "@(#)MKLINKS	1.5 09/08/15 "
+#ident "@(#)MKLINKS	1.1 09/08/16 "
 ###########################################################################
 # Written 2008 by J. Schilling
 ###########################################################################
@@ -25,8 +25,7 @@ test -r xxzzy.345 || symlink=cp
 rm -f xxzzy.123 xxzzy.345
 ###########################################################################
 
-$symlink ../cdrecord/cd_misc.c		.
-$symlink ../readcd/io.c			.
-$symlink ../cdrecord/misc.c		.
-$symlink ../cdrecord/scsi_cdr.c		.
-$symlink ../cdrecord/scsi_scan.c	.
+$symlink Makefile.cmd	cmd.mk
+$symlink Makefile.inc	inc.mk
+$symlink Makefile.lib	lib.mk
+$symlink Makefile.shl	shl.mk
